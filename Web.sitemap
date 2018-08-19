@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="shouabout.aspx" title="首页"  description="">
+    <siteMapNode url="index.aspx" title="关于果园"  description="">
+        <siteMapNode url="shouyejianjie.aspx" title="果园简介"  description="" />
+        <siteMapNode url="shouyefengjing.aspx" title="果园风景"  description="" />
+        <siteMapNode url="shouyezuixinxiaoxi.aspx" title="果园最新消息"  description="" />
+    </siteMapNode>
+  <siteMapNode url="gh.aspx" title="果园活动"  description="">
+    <siteMapNode url="ghpickfruit.aspx" title="水果采摘"  description="" />
+    <siteMapNode url="ghtravel.aspx" title="果园观赏"  description="" />
+    <siteMapNode url="ghplanttree.aspx" title="自养树苗"  description="" />
+    <siteMapNode url="ghknowledgeable.aspx" title="水果知识科普小课堂"  description="" />
+  </siteMapNode>
+  <siteMapNode url="fs.aspx" title="水果供应"  description="">
+    <siteMapNode url="fsnewfruit.aspx" title="新上水果"  description="" />
+    <siteMapNode url="fshotfruits.aspx" title="热销水果"  description="" />
+    <siteMapNode url="fscheapfruits.aspx" title="折扣水果"  description="" />
+  </siteMapNode>
+  <siteMapNode url="reserve.aspx" title="周边食宿"  description="">
+    <siteMapNode url="reserveeat.aspx" title="预定餐馆"  description="" />
+    <siteMapNode url="reservelivingroom.aspx" title="预定宾馆"  description="" />
+   
+  </siteMapNode>
+  <siteMapNode url="my.aspx" title="我的"  description="">
+    <siteMapNode url="myinfo.aspx" title="我的信息"  description="" />
+    <siteMapNode url="myshopping.aspx" title="我的购物车"  description="" />
+    <siteMapNode url="myhistory.aspx" title="我购买过的东西"  description="" />
+  </siteMapNode>
+  </siteMapNode>
+</siteMap>

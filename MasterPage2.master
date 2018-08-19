@@ -1,0 +1,363 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>包丽丽观光果园开展啦</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+   
+    
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+         @import url(StyleSheet.css) screen;
+        
+      
+        .style1
+        {
+            text-align: right;
+        }
+        
+      
+        .style2
+        {
+            width: 300px;
+        }
+        
+      
+        .style3
+        {
+            height: 78px;
+        }
+        .style4
+        {
+            height: 21px;
+        }
+        
+      
+    </style>
+        <link href="css/css.css" rel="stylesheet" media="screen"/>
+        <link href="StyleSheet.css" rel="stylesheet" media="screen"/>
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+</head>
+<body  >
+    <form id="form1" runat="server"  >
+    
+    <div class="daohang" align="center"  >
+            
+        
+        <table   width="100%"  cellpadding="2" cellspacing="1" 
+             style="font-family: 微软雅黑; font-size: 15px; " bgcolor="#242037" 
+             border="0">
+            <tr >
+                <td Width="200px" style="padding-left:150px">
+                    <asp:Image ID="Image1" runat="server" Height="72px" ImageAlign="Middle" 
+                        ImageUrl="~/picture/logo.jpg" Width="145px" />
+                </td>
+                   
+                <td   Width="150px" >
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+                    
+                        StaticEnableDefaultPopOutImage="False" 
+                        DynamicHorizontalOffset="-15" 
+                        DisappearAfter="700" DynamicVerticalOffset="2"
+                        Font-Bold="True" 
+                         ForeColor="White"
+                        >
+                        
+                        
+                       <StaticSelectedStyle CssClass="StaticSelectedStyle"  />
+                        <StaticMenuItemStyle CssClass="StaticMenuItemStyle"  />
+                        <DynamicHoverStyle BackColor="#999999" CssClass="DynamicHoverStyle" 
+                            ForeColor="#97614D" Font-Bold="True"  />
+                        <DynamicMenuStyle CssClass="DynamicMenuStyle" BackColor="#9999FF" />
+                        <DynamicSelectedStyle CssClass="DynamicSelectedStyle" HorizontalPadding="2px" 
+                            VerticalPadding="2px"  />
+                        <DynamicMenuItemStyle CssClass="DynamicMenuItemStyle" HorizontalPadding="2px" 
+                            VerticalPadding="2px"  />
+                        <StaticHoverStyle BackColor="Gray" CssClass="StaticHoverStyle" 
+                            ForeColor="White" Font-Bold="True"  />
+                            
+                            
+                            
+                        <Items>
+                            <asp:MenuItem Text="关于果园" Value="关于果园" NavigateUrl="~/shouyejianjie.aspx">
+                                <asp:MenuItem NavigateUrl="~/shouyejianjie.aspx" Text="果园简介" Value="果园简介">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/shouyefengjing.aspx" Text="果园风景" Value="果园风景">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="果园最新消息更新" Value="果园最新消息更新" NavigateUrl="~/bbshouyezuixinxiaoxi.aspx" 
+                                    Selected="True"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                
+                
+                <td  Width="120px">
+                    <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" 
+                        StaticEnableDefaultPopOutImage="False" 
+                        DynamicHorizontalOffset="-40" 
+                        
+                        
+                          Font-Bold="True" 
+                         ForeColor="White"
+                        MaximumDynamicDisplayLevels="4">
+                      
+                        
+                          
+                           
+                        <StaticSelectedStyle CssClass="StaticSelectedStyle" />
+                        <StaticMenuItemStyle CssClass="StaticMenuItemStyle" />
+                        <DynamicHoverStyle BackColor="#999999" CssClass="DynamicHoverStyle" 
+                            ForeColor="#97614D" Font-Bold="True" />
+                        <DynamicMenuStyle CssClass="DynamicMenuStyle" BackColor="#9999FF" 
+                            />
+                        <DynamicSelectedStyle CssClass="DynamicSelectedStyle" HorizontalPadding="2px" 
+                            VerticalPadding="2px" />
+                        <DynamicMenuItemStyle CssClass="DynamicMenuItemStyle" HorizontalPadding="2px" 
+                            VerticalPadding="2px" />
+                        <StaticHoverStyle BackColor="Gray" CssClass="StaticHoverStyle" 
+                            ForeColor="White" Font-Bold="True" />
+                        
+                        
+                        
+                        <Items>
+                            <asp:MenuItem Text="果园活动" Value="果园活动" NavigateUrl="~/ghpickfruit.aspx">
+                                <asp:MenuItem Text="水果采摘" Value="水果采摘" NavigateUrl="~/bbghpickfruit.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="自养树苗" Value="自养树苗" NavigateUrl="~/ghplanttree.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="水果知识科普小课堂" Value="水果知识科普小课堂" 
+                                    NavigateUrl="~/bbghknowledgeable.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td   Width="120px">
+                    <asp:Menu ID="Menu3" runat="server" Orientation="Horizontal" 
+                        StaticEnableDefaultPopOutImage="False"
+                        
+                         Font-Bold="True" 
+                         ForeColor="White"
+                        >
+                      
+                          
+                        
+                        <StaticSelectedStyle CssClass="StaticSelectedStyle" />
+                        <StaticMenuItemStyle CssClass="StaticMenuItemStyle" />
+                        <DynamicHoverStyle BackColor="#999999" CssClass="DynamicHoverStyle" 
+                            ForeColor="#97614D" Font-Bold="True" />
+                        <DynamicMenuStyle CssClass="DynamicMenuStyle" BackColor="#9999FF" 
+                           />
+                        <DynamicSelectedStyle CssClass="DynamicSelectedStyle" HorizontalPadding="2px" 
+                            VerticalPadding="2px" />
+                        <DynamicMenuItemStyle CssClass="DynamicMenuItemStyle" HorizontalPadding="2px" 
+                            VerticalPadding="2px" />
+                        <StaticHoverStyle BackColor="Gray" CssClass="StaticHoverStyle" 
+                            ForeColor="White" Font-Bold="True" />
+                        
+                        <Items>
+                            <asp:MenuItem Text="水果供应" Value="水果供应" NavigateUrl="~/fsnewfruit.aspx">
+                                <asp:MenuItem Text="新上水果" Value="新上水果" NavigateUrl="~/bbfsnewfruit.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td Width="120px">
+                    <asp:Menu ID="Menu4" runat="server" Orientation="Horizontal"
+                    
+                     Font-Bold="True" 
+                         ForeColor="White" 
+                        StaticEnableDefaultPopOutImage="False">
+                        
+                        
+                         <StaticSelectedStyle CssClass="StaticSelectedStyle" />
+                        <StaticMenuItemStyle CssClass="StaticMenuItemStyle" />
+                        <DynamicHoverStyle BackColor="#999999" CssClass="DynamicHoverStyle" 
+                            ForeColor="#97614D" Font-Bold="True" />
+                        <DynamicMenuStyle CssClass="DynamicMenuStyle" BackColor="#9999FF" 
+                            />
+                        <DynamicSelectedStyle CssClass="DynamicSelectedStyle" HorizontalPadding="2px" 
+                            VerticalPadding="2px" />
+                        <DynamicMenuItemStyle CssClass="DynamicMenuItemStyle" HorizontalPadding="2px" 
+                            VerticalPadding="2px" />
+                        <StaticHoverStyle BackColor="Gray" CssClass="StaticHoverStyle" 
+                            ForeColor="White" Font-Bold="True" />
+                        
+                        <Items>
+                            <asp:MenuItem Text="周边食宿" Value="周边食宿" NavigateUrl="~/reserveeat.aspx">
+                                <asp:MenuItem Text="预定餐馆" Value="预定餐馆" NavigateUrl="~/reserveeat.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="预定宾馆" Value="预定宾馆" NavigateUrl="~/reservelivingroom.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td Width="120px">
+                    <asp:Menu ID="Menu5" runat="server" Orientation="Horizontal" 
+                     Font-Bold="True" 
+                         ForeColor="White" 
+                    DynamicHorizontalOffset="-40"
+                        StaticEnableDefaultPopOutImage="False">
+                        
+                         
+                      <StaticSelectedStyle CssClass="StaticSelectedStyle" />
+                        <StaticMenuItemStyle CssClass="StaticMenuItemStyle" />
+                        <DynamicHoverStyle BackColor="#999999" CssClass="DynamicHoverStyle" 
+                            ForeColor="#97614D" Font-Bold="True" />
+                        <DynamicMenuStyle CssClass="DynamicMenuStyle" BackColor="#9999FF" 
+                            />
+                        <DynamicSelectedStyle CssClass="DynamicSelectedStyle" HorizontalPadding="2px" 
+                            VerticalPadding="2px" />
+                        <DynamicMenuItemStyle CssClass="DynamicMenuItemStyle" HorizontalPadding="2px" 
+                            VerticalPadding="2px" />
+                        <StaticHoverStyle BackColor="Gray" CssClass="StaticHoverStyle" 
+                            ForeColor="White" Font-Bold="True" />
+                        
+                        <Items>
+                            <asp:MenuItem Text="管理信息" Value="管理信息" NavigateUrl="~/bbmyinfo.aspx">
+                                <asp:MenuItem Text="管理订单" Value="管理订单" NavigateUrl="~/bbmyinfo.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="会员信息管理" Value="会员信息管理" NavigateUrl="~/bbinfohuiyuan.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="评论管理" Value="评论管理" NavigateUrl="~/bbinfopinglun.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                
+                      <td  Width="90px"   >
+                
+     
+                    <asp:LinkButton ID="LinkButton6" runat="server" Font-Bold="True" 
+                        ForeColor="White" PostBackUrl="~/myloginn.aspx">登录</asp:LinkButton>
+                    
+                    <br />
+                    
+                   
+                    
+                    
+                    
+                    <asp:LinkButton ID="LinkButton7" runat="server"  Font-Bold="True" 
+                         ForeColor="White" PostBackUrl="~/myzhuce.aspx">注册</asp:LinkButton></td>
+                <td>
+                    <asp:Label ID="Label3" runat="server" ForeColor="White"></asp:Label>
+                </td>
+            </tr></table>
+         </div>
+        
+    
+     <br />
+          <br />
+          <br />
+        <br />
+        <br />
+         <table bgcolor="#242037" width="100%" >
+              <tr  align="left">
+            
+               <td height="40px"  style="padding-left:177px;">
+                  <!-- padding-top :200px;"-->
+          <asp:Label ID="Label1" runat="server" Font-Bold="True" 
+             Font-Names="微软雅黑" Font-Size="X-Large" ForeColor="white" ></asp:Label> </td>
+             <td></td>
+              </tr>    
+                </table>
+       
+         
+        <table width="100%" >
+            <tr >
+                <td  align="center" class="style2"></td>
+                    
+                     <td class="style1">
+                         &nbsp;</td>
+            </tr>
+            <tr>
+                <td  colspan="2" class="style4">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <p>
+                            &nbsp;</p>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+          
+           
+           <tr bgcolor="Black" >&nbsp;
+           <td  height="3px" class="style2"></td>
+           <td></td>
+            
+            </tr>
+            
+            <tr>&nbsp; <td class="style3" colspan="2">&nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <br /></td>
+            
+            </tr>
+            
+            
+            
+            </table>
+        
+        
+          <!-- 脚本 -->
+        <div class="livechat-girl animated"> <img class="girl" src="images/en_3.png"/>
+  <div class="livechat-hint rd-notice-tooltip rd-notice-type-success rd-notice-position-left single-line hide_hint">
+    <div class="rd-notice-content">嘿，我来帮您！</div>
+  </div>
+  <div class="animated-circles animated">
+    <div class="circle c-1"></div>
+    <div class="circle c-2"></div>
+    <div class="circle c-3"></div>
+  </div>
+</div>
+       
+     <script type="text/javascript">
+    (function($) {
+        setInterval(function() {
+            if ($(".animated-circles").hasClass("animated")) {
+                $(".animated-circles").removeClass("animated");
+            } else {
+                $(".animated-circles").addClass('animated');
+            }
+        }, 3000);
+       var wait = setInterval(function() {
+            $(".livechat-hint").removeClass("show_hint").addClass("hide_hint");
+            clearInterval(wait);
+        }, 4500);
+        $(".livechat-girl").hover(function() {
+            clearInterval(wait);
+            $(".livechat-hint").removeClass("hide_hint").addClass("show_hint");
+        }, function() {
+            $(".livechat-hint").removeClass("show_hint").addClass("hide_hint");
+        }).click(function() {
+            window.location.href = "chat.aspx?"  
+        });
+    })(jQuery);
+</script>
+
+<!-- 脚本完 -->
+        
+        
+        
+        
+        
+         <table  width=100%; bgcolor="#242037">
+        <tr >   <td  style="margin-left:100px; padding-left:100px" >   <asp:ImageButton ID="ImageButton1" runat="server" Height="127px" 
+                        ImageUrl="~/picture/logo.jpg" PostBackUrl="~/shouabout.aspx" Width="272px" />         
+                             </td> 
+            <td   style="margin-left:100px;padding-left:100px">
+            
+            <asp:LinkButton ID="LinkButton1" runat="server" 
+                PostBackUrl="~/shouyejianjie.aspx" ForeColor="White" Font-Bold="True">关于果园</asp:LinkButton> 
+            &nbsp;
+            <asp:LinkButton ID="LinkButton2" runat="server" 
+                PostBackUrl="~/ghpickfruit.aspx"  ForeColor="White" Font-Bold="True">果园活动</asp:LinkButton>
+            &nbsp;
+            <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/fsnewfruit.aspx"  ForeColor="White" Font-Bold="True">水果供应</asp:LinkButton>
+&nbsp;
+            <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/reserveeat.aspx"   ForeColor="White" Font-Bold="True">周边食宿</asp:LinkButton>
+&nbsp;
+            <asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/myinfo.aspx"  ForeColor="White" Font-Bold="True">我的</asp:LinkButton>
+            
+        </td> </tr></table>
+    
+    </form>
+</body>
+</html>
